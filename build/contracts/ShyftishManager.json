@@ -1,0 +1,366 @@
+{
+  "contractName": "ShyftishManager",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060e98061005f6000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b146044575b600080fd5b348015604f57600080fd5b5060566098565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820427616ef3a3066b98233c963560e228b9c246de7bdb1a6bfc14f22aa720f3bb10029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b146044575b600080fd5b348015604f57600080fd5b5060566098565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820427616ef3a3066b98233c963560e228b9c246de7bdb1a6bfc14f22aa720f3bb10029",
+  "sourceMap": "26:129:28:-;;;84:69;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:69:28;136:10;128:5;;:18;;;;;;;;;;;;;;;;;;26:129;;;;;;",
+  "deployedSourceMap": "26:129:28:-;;;;;;;;;;;;;;;;;;;;;;;;57:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:20:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.19;\n\ncontract ShyftishManager {\n    address public owner;\n\n    function ShyftishManager() public {\n        owner = msg.sender;\n    }\n}\n",
+  "sourcePath": "/Users/jaypersanchez/KYCAML/contracts/ShyftishManager.sol",
+  "ast": {
+    "absolutePath": "/Users/jaypersanchez/KYCAML/contracts/ShyftishManager.sol",
+    "exportedSymbols": {
+      "ShyftishManager": [
+        8153
+      ]
+    },
+    "id": 8154,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8141,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:28"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 8153,
+        "linearizedBaseContracts": [
+          8153
+        ],
+        "name": "ShyftishManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 8143,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 8153,
+            "src": "57:20:28",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 8142,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "57:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 8151,
+              "nodeType": "Block",
+              "src": "118:35:28",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8149,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 8146,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8143,
+                      "src": "128:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 8147,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10698,
+                        "src": "136:3:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 8148,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "136:10:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "128:18:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 8150,
+                  "nodeType": "ExpressionStatement",
+                  "src": "128:18:28"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 8152,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ShyftishManager",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8144,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "108:2:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 8145,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "118:0:28"
+            },
+            "scope": 8153,
+            "src": "84:69:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 8154,
+        "src": "26:129:28"
+      }
+    ],
+    "src": "0:156:28"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jaypersanchez/KYCAML/contracts/ShyftishManager.sol",
+    "exportedSymbols": {
+      "ShyftishManager": [
+        8153
+      ]
+    },
+    "id": 8154,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8141,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:28"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 8153,
+        "linearizedBaseContracts": [
+          8153
+        ],
+        "name": "ShyftishManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 8143,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 8153,
+            "src": "57:20:28",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 8142,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "57:7:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 8151,
+              "nodeType": "Block",
+              "src": "118:35:28",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8149,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 8146,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8143,
+                      "src": "128:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 8147,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10698,
+                        "src": "136:3:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 8148,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "136:10:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "128:18:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 8150,
+                  "nodeType": "ExpressionStatement",
+                  "src": "128:18:28"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 8152,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "ShyftishManager",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8144,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "108:2:28"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 8145,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "118:0:28"
+            },
+            "scope": 8153,
+            "src": "84:69:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 8154,
+        "src": "26:129:28"
+      }
+    ],
+    "src": "0:156:28"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-10-11T00:10:45.104Z"
+}

@@ -1,0 +1,282 @@
+{
+  "contractName": "IShyftCacheGraph",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_identifiedAddress",
+          "type": "address"
+        },
+        {
+          "name": "_idx",
+          "type": "uint16"
+        }
+      ],
+      "name": "compileCacheGraph",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.19;\n\ncontract IShyftCacheGraph {\n    function compileCacheGraph(address _identifiedAddress, uint16 _idx) public;\n}\n",
+  "sourcePath": "/Users/jaypersanchez/KYCAML/contracts/Interfaces/IShyftCacheGraph.sol",
+  "ast": {
+    "absolutePath": "/Users/jaypersanchez/KYCAML/contracts/Interfaces/IShyftCacheGraph.sol",
+    "exportedSymbols": {
+      "IShyftCacheGraph": [
+        1264
+      ]
+    },
+    "id": 1265,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1256,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:9"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1264,
+        "linearizedBaseContracts": [
+          1264
+        ],
+        "name": "IShyftCacheGraph",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1263,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "compileCacheGraph",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1261,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1258,
+                  "name": "_identifiedAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1263,
+                  "src": "85:26:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1257,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "85:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1260,
+                  "name": "_idx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1263,
+                  "src": "113:11:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1259,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "113:6:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "84:41:9"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1262,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:9"
+            },
+            "scope": 1264,
+            "src": "58:75:9",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1265,
+        "src": "26:109:9"
+      }
+    ],
+    "src": "0:136:9"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jaypersanchez/KYCAML/contracts/Interfaces/IShyftCacheGraph.sol",
+    "exportedSymbols": {
+      "IShyftCacheGraph": [
+        1264
+      ]
+    },
+    "id": 1265,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1256,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:9"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1264,
+        "linearizedBaseContracts": [
+          1264
+        ],
+        "name": "IShyftCacheGraph",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1263,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "compileCacheGraph",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1261,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1258,
+                  "name": "_identifiedAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1263,
+                  "src": "85:26:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1257,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "85:7:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1260,
+                  "name": "_idx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1263,
+                  "src": "113:11:9",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1259,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "113:6:9",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "84:41:9"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1262,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "132:0:9"
+            },
+            "scope": 1264,
+            "src": "58:75:9",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1265,
+        "src": "26:109:9"
+      }
+    ],
+    "src": "0:136:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-10-11T00:10:45.103Z"
+}

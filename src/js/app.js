@@ -152,6 +152,30 @@ App = {
      */
   },
 
+  setPrimaryAdministrator: function() {
+    url = App.baseURL + "set_primary_administrator";
+
+    //alert(App.shyftapiToken);
+    $.ajax({
+      url: url,
+      type: "POST",
+      dataType: 'json',
+      data: {"trust_anchor_address":"0x43ec6d0942f7faef069f7f63d0384a27f529b062","trust_anchor_address":"0x43ec6d0942f7faef069f7f63d0384a27f529b062"},
+      headers: {
+        "X-User-Token": "B1C46FAD",
+        "Accept":"application/json",
+      },
+      success: function (msg) {
+        alert("Success: ");
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        alert( console.log("jqXHR: " + jqXHR) ); //Acutal error
+        alert( console.log("textStatus: " + textStatus) );
+        alert( console.log("errorThrown: " + errorThrown) );
+      }
+    });
+  },
+
   sendTransaction: function() {
     
     url = App.baseURL + "send_transaction";
@@ -177,7 +201,6 @@ App = {
       },
       error: function (e) {
         alert( console.log(e.responseText) ); //Acutal error
-        alert( console.log(e) ); //Get the entire error details
       }
     });
   }

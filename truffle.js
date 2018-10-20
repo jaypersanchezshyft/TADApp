@@ -14,11 +14,31 @@
 
 module.exports = {
   networks: {
-    ganache: {
-      host: "localhost",
+    ganache_cli: {
+      host: "127.0.0.1",
       port: 8545,
       network_id: "*", // Match any network id
-      gas: 3500000
-    }
+      gas: 3500000,
+    },
+    parity_testnet: {
+      host: "54.157.70.195",
+      port: 8545,
+      // host: "127.0.0.1",
+      // port: 7545,
+      network_id: "0x7FFFFFFF",
+      from: "0x43EC6d0942f7fAeF069F7F63D0384a27f529B062",
+      gas: 10000000,
+      gasLimit: 10000000
+  },
+  geth_testnet: {
+      host: "127.0.0.1",
+      port: 8545,
+      // host: "127.0.0.1",
+      // port: 7545,
+      network_id: "0x7FFFFFFF",
+      from: "0x43EC6d0942f7fAeF069F7F63D0384a27f529B062",
+      gas: 10000000,
+      gasLimit: 10000000
+  }
   }
 };
